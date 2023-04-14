@@ -1,0 +1,115 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "gg sans","Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-image: url(BG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+bg{
+    width: 100vh;
+    height: 100vh;
+}
+body .card {
+    position: absolute;
+    width: 30rem;
+    height: auto;
+    margin: 0px auto;
+    background-color: #313338;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body .card .left-side{
+    text-align: center;
+}
+body .card .left-side p{
+    color: gray;
+}
+body .card .left-side .input-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+body .card .left-side .input-box label{
+    padding: 5px 0px;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #8d9298;
+}
+body .card .left-side .input-box label span{
+    color: #9d393d;
+}
+body .card .left-side .input-box input{
+    background-color: rgba(30,31,34,255);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+body .card .left-side .forgot-pwd{
+    text-align: left;
+    font-size: 0.8em;
+}
+body .card .left-side .forgot-pwd a{
+    color: #1575a5;
+}
+body .card .left-side button{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(88,101,242,255);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+body .card .left-side .Register{
+    text-align: left;
+    font-size: 0.8em;
+    color: gray;
+}
+body .card .left-side .Register span{
+    color: #17709e;
+}
+body .right-side{
+    display: flex;
+    flex-direction: row;
+}
+@media only screen and (min-width: 700px) {
+    body .card{
+        display: flex;
+        flex-direction: row;
+        width: 50rem;
+    }
+    body .card .left-side{
+        width: 50%;
+    }
+    body .card .right-side{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    body .card .right-side img{
+        width: 45%;
+        height: 45%;
+        border-radius: 10px;
+        background-color: white;
+        padding: 10px;
+    }
+    body .card .right-side h1{
+        width: 10rem;
+        text-align: center;
+        font-size: 1.5em;
+    }
+}
